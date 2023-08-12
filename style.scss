@@ -1,0 +1,372 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+h2, th {
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    border: white 3px solid;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    border-spacing: 1px;
+}
+
+table tr td {
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.index_body {
+    background-color: #000000;
+}
+
+.div-span {
+    height: 80px;
+}
+
+.profile {
+    .profile-box {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0 auto;
+        background-color: #FFCC01;
+        padding: 20px;
+        font-weight: bold;
+        .profile-text {
+            margin: auto 0;
+            background-color: #8beb4fcf;
+            padding: 20px;
+            border: 3px solid #262c30c8;
+            border-radius: 10px;
+        }
+    }
+}
+
+.result-grade-list {
+    table {
+        border-collapse: collapse;
+        td {
+            border: white 3px solid;
+        }
+        h3.grade-name.katudon {
+            color: white;
+        }
+        h3.grade-name.sky {
+            color: lightblue;
+        }
+        h3.grade-name.pink {
+            color: pink;
+        }
+        h3.grade-name.light-green {
+            color: lightgreen;
+        }
+        h3.grade-name.purple {
+            color: purple;
+        }
+        h3.grade-name.white {
+            color: #D0D0D0;
+        }
+        h3.grade-name.red {
+            color: red;
+        }
+        h3.grade-name.yellow {
+            color: yellow;
+        }
+        h3.grade-name.blue {
+            color: blue;
+        }
+        h3.grade-name.green {
+            color: green;
+        }
+        .grade-name.rainbow-2020, .grade-name.rainbow-2021, .grade-name.rainbow-2022, .grade-name.rainbow-2023 {
+            width: max-content;
+            margin-right: auto;
+            margin-left: auto;
+            background: linear-gradient(90deg, rgba(255, 97, 97, 1), rgba(233, 178, 45, 1) 20%, rgba(192, 202, 75, 1) 34%, rgba(53, 179, 56, 1) 58%, rgba(86, 110, 243, 1) 79%, rgba(154, 39, 238, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.result-table-list {
+    .all-button {
+        text-align: center;
+        margin: 20px 0;
+        button {
+            color: white;
+            background-color: #000000;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button:hover {
+            color: #000000;
+            background-color: white;
+        }
+    }
+    .diff-button {
+        text-align: center;
+        margin: 20px 0;
+        button {
+            color: white;
+            background-color: rgb(255, 69, 0, 0.8);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button:hover {
+            color: rgb(255, 69, 0, 0.8);
+            background-color: white;
+        }
+    }
+    .genre-button {
+        text-align: center;
+        margin: 20px;
+        button {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button:nth-child(1) {
+            background-color: #F67A24;
+            color: white;
+        }
+        button:nth-child(1):hover {
+            background-color: white;
+            color: #F67A24;
+        }
+        button:nth-child(2) {
+            background-color: #4BCADD;
+            color: white;
+        }
+        button:nth-child(2):hover {
+            background-color: white;
+            color: #4BCADD;
+        }
+        button:nth-child(3) {
+            background-color: #FAC904;
+            color: white;
+        }
+        button:nth-child(3):hover {
+            background-color: white;
+            color: #FAC904;
+        }
+        button:nth-child(4) {
+            background-color: #F99BDE;
+            color: white;
+        }
+        button:nth-child(4):hover {
+            background-color: white;
+            color: #F99BDE;
+        }
+        button:nth-child(5) {
+            background-color: #D195F1;
+            color: white;
+        }
+        button:nth-child(5):hover {
+            background-color: white;
+            color: #D195F1;
+        }
+        button:nth-child(6) {
+            background-color: #3ECE43;
+            color: white;
+        }
+        button:nth-child(6):hover {
+            background-color: white;
+            color: #3ECE43;
+        }
+        button:nth-child(7) {
+            background-color: #BEBDCE;
+            color: white;
+        }
+        button:nth-child(7):hover {
+            background-color: white;
+            color: #BEBDCE;
+        }
+        button:nth-child(8) {
+            background-color: #CEC701;
+            color: white;
+        }
+        button:nth-child(8):hover {
+            background-color: white;
+            color: #CEC701;
+        }
+    }
+    .result-table {
+        border-collapse: collapse;
+        th, td {
+            border: 3px white solid;
+        }
+    }
+}
+
+.result-out-list {
+    .result-out {
+        border-collapse: collapse;
+        th {
+            background-color: rgb(255, 69, 0, 0.8);
+        }
+        th, td {
+            color: #f5f5f5;
+            border: white 2px solid;
+        }
+        td {
+            border-right: white 2px solid;
+            border-left: white 2px solid;
+        }
+    }
+}
+
+.result-genre-list {
+    .result-genre {
+        border-collapse: collapse;
+        th {
+            color: #f5f5f5;
+            border: white 2px solid;
+        }
+        td {
+            color: white;
+            border-right: white 2px solid;
+            border-left: white 2px solid;
+        }
+    }    
+}
+
+.grid {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    background: #e1ffcd;
+    box-shadow: 0px 0px 0px 5px #e1ffcd;
+    border: dashed 2.3px rgb(46, 255, 26);
+    padding: 0.2em 0.5em;
+    :after {
+        position: absolute;
+        content: '';
+        right: -7px;
+        top: -7px;
+        border-width: 0 45px 45px 0;
+        border-style: solid;
+        border-color: #5cc01a #000000 #5cc01a;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        .grid-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            border-radius: 10%;
+        }
+        .grid-item img:hover {
+            transform: scale(1.3);
+            position: relative;
+            z-index: 100;
+        }
+    }
+}
+
+.footer {
+    padding: 20px;
+    font-weight: bold;
+    a {
+        width: max-content;
+        transition: 1s;
+        color: #f5f5f5;
+        margin: 5px auto;
+    }
+    a:hover {
+        border-radius: 50%;
+        background-color: rgba(237, 230, 224, 0.8);
+    }
+    p {
+        font-size: 19px;
+        color: #f5f5f5;
+    }
+    .footer-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        .footer-block {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-flow: column;
+        }
+    }
+    p.contact {
+        width: max-content;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .contact a {
+        transition: 0s;
+    }
+    .contact a:hover {
+        color: #000000;
+        background-color: #f5f5f5;
+    }
+    .copy {
+        text-align: center;
+        color: #f5f5f5;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    table {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .profile-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .profile-img, .profile-text {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .profile-img img {
+        width: 100%;
+    }
+}

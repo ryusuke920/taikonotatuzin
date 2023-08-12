@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="icon" href="./img/favicon.ico" sizes="any">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>ryusuke920 太鼓の達人</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+        <script src="https://kit.fontawesome.com/c047b14b70.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="index_body">
+        <div id="particles-js"></div>
+        <div class="div-span">
+            <!-- 余白を取る -->
+        </div>
+        <div class="profile">
+            <div class="profile-box">
+                <div class="profile-img">
+                    <img src="./img/profile.jpg" alt="どんちゃん">
+                </div>
+                <div class="profile-text">
+                    <p class="SN">SN: 御坂美琴</p>
+                    <p class="zenryou-num"></p>
+                    <p>都道府県: 愛知県</p>
+                    <p>太鼓番: 856664547590</p>
+                </div>
+            </div>
+        </div>
+        <div class="result-grade-list">
+            <h2>過去の段位道場</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h3 class="grade-name katudon">カツドン</h3>
+                        <p class="grade-result">ー</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name sky">ソライロ</h3>
+                        <p class="grade-result">ー</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name pink">モモイロ</h3>
+                        <p class="grade-result">ー</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name light-green">キミドリ</h3>
+                        <p class="grade-result">ー</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name purple">ムラサキ</h3>
+                        <p class="grade-result">十段（復活）</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name white">ホワイト</h3>
+                        <p class="grade-result">十段（復活）</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name red">レッド</h3>
+                        <p class="grade-result">十段（復活）</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 class="grade-name yellow">イエロー</h3>
+                        <p class="grade-result">ー</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name blue">ブルー</h3>
+                        <p class="grade-result">十段(復活)</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name green">グリーン</h3>
+                        <p class="grade-result">九段</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name rainbow-2020">2020</h3>
+                        <p class="grade-result">十段</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name rainbow-2021">2021</h3>
+                        <p class="grade-result">玄人</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name rainbow-2022">2022</h3>
+                        <p class="grade-result">玄人</p>
+                    </td>
+                    <td>
+                        <h3 class="grade-name rainbow-2023">2023</h3>
+                        <p class="grade-result">名人(予定)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="result-out-list">
+            <h2>難易度別の全良譜面数</h2>
+            <table class="result-out">
+            </table>
+        </div>
+        <div class="result-genre-list">
+            <h2>ジャンル別の全良譜面数</h2>
+            <table class="result-genre">
+            </table>
+        </div>
+        <div class="result-table-list">
+            <h2>全良曲一覧</h2>
+            <div class="all-button">
+                <button onclick="ShowAll()">全て</button>
+            </div>
+            <div class="diff-button">
+                <button onclick="ShowDifficult('1')">★1</button>
+                <button onclick="ShowDifficult('2')">★2</button>
+                <button onclick="ShowDifficult('3')">★3</button>
+                <button onclick="ShowDifficult('4')">★4</button>
+                <button onclick="ShowDifficult('5')">★5</button>
+                <button onclick="ShowDifficult('6')">★6</button>
+                <button onclick="ShowDifficult('7')">★7</button>
+                <button onclick="ShowDifficult('8')">★8</button>
+                <button onclick="ShowDifficult('9')">★9</button>
+                <button onclick="ShowDifficult('10')">★10</button>
+            </div>
+            <div class="genre-button">
+                <button onclick="ShowGenre('ナムコオリジナル')">ナムコオリジナル</button>
+                <button onclick="ShowGenre('ポップス')">ポップス</button>
+                <button onclick="ShowGenre('キッズ')">キッズ</button>
+                <button onclick="ShowGenre('アニメ')">アニメ</button>
+                <button onclick="ShowGenre('ゲームミュージック')">ゲームミュージック</button>
+                <button onclick="ShowGenre('バラエティ')">バラエティ</button>
+                <button onclick="ShowGenre('ボーカロイド')">ボーカロイド</button>
+                <button onclick="ShowGenre('クラシック')">クラシック</button>
+            </div>
+            <table class="result-table">
+                <tr>
+                    <th>No.</th>
+                    <th>日付</th>
+                    <th>曲名</th>
+                    <th>難易度</th>
+                    <th>ジャンル</th>
+                    <th>リザルト画面</th>
+                </tr>
+            </table>
+        </div>
+        <div class="best-result">
+            <h2>過去の段位道場</h2>
+            <div class="grid">
+                <h3>グリーン Ver.</h3>
+                <p>2020/03/23 九段 赤合格</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/green-1.jpg" alt="" >
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/green-2.jpg" alt="" >
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/green-3.jpg" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <h3>ニジイロ 2020 Ver.</h3>
+                <p>2021/01/28 十段 白枠赤合格</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2020-1.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2020-2.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2020-3.jpg" alt="" class="grid-img">
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <h3>ニジイロ 2021 Ver.</h3>
+                <p>2021/09/11 玄人 白枠赤合格</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2021-1.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2021-2.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2021-3.jpg" alt="" class="grid-img">
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <h3>ニジイロ 2022 Ver.</h3>
+                <p>2022/09/24 玄人 白枠赤合格</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2022-1.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2022-2.jpg" alt="" class="grid-img">
+                    </div>
+                    <div class="grid-item">
+                        <img src="./img/dani-dozyo/2022-3.jpg" alt="" class="grid-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>主なリンク先</p>
+            <div class="footer-blocks">
+                <div class="footer-block">
+                    <a href="https://www.bandainamco.co.jp/" target="_blank">BANDAI NAMCO 公式ページ</a>
+                    <a href="https://taiko.namco-ch.net/taiko/" target="_blank">太鼓の達人 公式ページ</a>
+                    <a href="https://donderhiroba.jp/index.php" target="_blank">ドンだーひろば</a>
+                </div>
+                <div class="sns footer-block">
+                    <a href="https://github.com/ryusuke920" target="_blank">GitHub</a>
+                    <a href="https://twitter.com/ryusuke__h" target="_blank">Twitter</a>
+                    <a href="https://atcoder.jp/users/ryusuke_h" target="_blank">AtCoder</a>
+                    <a href="https://qiita.com/ryusuke920" target="_blank">Qiita</a>
+                </div>
+                <div class="sns footer-block">
+                    <a href="https://ryusuke920.hatenablog.jp/" target="_blank">はてなブログ</a>
+                    <a href="https://note.com/ryusuke_920" target="_blank">note</a>
+                    <a href="https://chatbot-ce5d5.web.app/" target="_blank">Chatfolio</a>
+                    <a href="https://onlinemathcontest.com/users/ryusuke_920" target="_blank">Online Math Contest</a>
+                </div>
+            </div>
+            <p class="contact">
+                お問い合わせ: <a href="mailto:ryusuke9200&#64;gmail.com">ryusuke9200&#64;gmail.com</a>
+            </p>
+            <p class="copy">&copy; Ryusuke920</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+        <script src="main.js"></script>
+        
+        <!-- 花吹雪のscript -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/js/5-8.js"></script>
+    </body>
+</html>
