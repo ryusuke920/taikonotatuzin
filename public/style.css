@@ -96,7 +96,6 @@ table tr td {
   color: green;
 }
 .result-grade-list table .grade-name.rainbow-2020, .result-grade-list table .grade-name.rainbow-2021, .result-grade-list table .grade-name.rainbow-2022, .result-grade-list table .grade-name.rainbow-2023 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-right: auto;
@@ -284,7 +283,6 @@ table tr td {
   font-weight: bold;
 }
 .footer a {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   transition: 1s;
@@ -314,7 +312,6 @@ table tr td {
   flex-flow: column;
 }
 .footer p.contact {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-size: 16px;
@@ -333,7 +330,12 @@ table tr td {
   font-size: 15px;
 }
 
-
+@media (max-width: 800px) {
+  table {
+    width: 80%;
+    margin: auto;
+  }
+}
 /*========= particle js を描画するエリア設定 ===============*/
 #particles-js {
   position: fixed; /*描画固定*/
@@ -342,37 +344,7 @@ table tr td {
   height: 100%;
 }
 
-@media (max-width: 800px) {
-  table {
-    width: 80%;
-    margin: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
-
-  .result-grade-list table {
-    width: 50%;
-    text-align: center;
-    border: none;
-  }
-
-  .result-grade-list td {
-    width: 50%;
-  }
-
-  /* .result-grade-list td:nth-child(2n + 1) {
-    display: inline-block;
-  }
-
-  .result-grade-list td:nth-child(2n) {
-    display: inline-block;
-  } */
-
-  .result-table tr td:nth-child(5), .result-table tr th:nth-child(5) {
-    display: none;
-  }
-
   .profile-box {
     display: flex;
     flex-direction: column;
@@ -384,9 +356,5 @@ table tr td {
   }
   .profile-img img {
     width: 100%;
-  }
-
-  .footer {
-    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
